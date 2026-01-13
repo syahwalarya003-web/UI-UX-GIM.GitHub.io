@@ -1,0 +1,1382 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jasa Desainer UI/UX untuk Gim</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="presentation-container">
+        <!-- Sidebar Navigasi -->
+        <nav class="sidebar">
+            <div class="logo-container">
+                <div class="main-logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h2>GameUX</h2>
+                        <p>Design Studio</p>
+                    </div>
+                </div>
+                
+                <div class="additional-logos">
+                    <div class="mini-logo">
+                        <div class="mini-logo-shape shape1">
+                            <i class="fas fa-dragon"></i>
+                        </div>
+                    </div>
+                    <div class="mini-logo">
+                        <div class="mini-logo-shape shape2">
+                            <i class="fas fa-chess-knight"></i>
+                        </div>
+                    </div>
+                    <div class="mini-logo">
+                        <div class="mini-logo-shape shape3">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                    </div>
+                    <div class="mini-logo">
+                        <div class="mini-logo-shape shape4">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                    </div>
+                    <div class="mini-logo">
+                        <div class="mini-logo-shape shape5">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="slide-navigation">
+                <h3><i class="fas fa-bars"></i> Daftar Slide</h3>
+                <div class="slide-list">
+                    <div class="slide-nav-item active" data-slide="0">
+                        <span class="nav-number">01</span>
+                        <span class="nav-title">Judul Presentasi</span>
+                    </div>
+                    <div class="slide-nav-item" data-slide="1">
+                        <span class="nav-number">02</span>
+                        <span class="nav-title">Tim Desainer</span>
+                    </div>
+                    <div class="slide-nav-item" data-slide="2">
+                        <span class="nav-number">03</span>
+                        <span class="nav-title">Apa itu UI/UX Gim?</span>
+                    </div>
+                    <div class="slide-nav-item" data-slide="3">
+                        <span class="nav-number">04</span>
+                        <span class="nav-title">Layanan Kami</span>
+                    </div>
+                    <div class="slide-nav-item" data-slide="4">
+                        <span class="nav-number">05</span>
+                        <span class="nav-title">Proses Desain</span>
+                    </div>
+                    <div class="slide-nav-item" data-slide="5">
+                        <span class="nav-number">06</span>
+                        <span class="nav-title">Portfolio</span>
+                    </div>
+                    <div class="slide-nav-item" data-slide="6">
+                        <span class="nav-number">07</span>
+                        <span class="nav-title">Teknologi</span>
+                    </div>
+                    <div class="slide-nav-item" data-slide="7">
+                        <span class="nav-number">08</span>
+                        <span class="nav-title">Testimoni</span>
+                    </div>
+                    <div class="slide-nav-item" data-slide="8">
+                        <span class="nav-number">09</span>
+                        <span class="nav-title">Keunggulan</span>
+                    </div>
+                    <div class="slide-nav-item" data-slide="9">
+                        <span class="nav-number">10</span>
+                        <span class="nav-title">Paket Layanan</span>
+                    </div>
+                    <div class="slide-nav-item" data-slide="10">
+                        <span class="nav-number">11</span>
+                        <span class="nav-title">Pencapaian</span>
+                    </div>
+                    <div class="slide-nav-item" data-slide="11">
+                        <span class="nav-number">12</span>
+                        <span class="nav-title">Kontak Kami</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="slide-controls">
+                <div class="progress-container">
+                    <div class="progress-bar">
+                        <div class="progress-fill"></div>
+                    </div>
+                    <div class="progress-text">Slide <span id="current-slide-num">1</span> dari 12</div>
+                </div>
+                
+                <div class="control-buttons">
+                    <button id="prev-btn" class="control-btn">
+                        <i class="fas fa-arrow-left"></i>
+                        <span>Sebelumnya</span>
+                    </button>
+                    <button id="next-btn" class="control-btn">
+                        <span>Berikutnya</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+                
+                <div class="keyboard-hint">
+                    <i class="fas fa-keyboard"></i>
+                    Gunakan ← → atau spasi untuk navigasi
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Area Presentasi Utama -->
+        <main class="presentation-area">
+            <div class="slides-container">
+                <!-- Slide 1: Judul -->
+                <section class="slide active" id="slide-1">
+                    <div class="slide-content">
+                        <div class="title-section">
+                            <div class="title-logos">
+                                <div class="title-logo">
+                                    <div class="logo-circle">
+                                        <i class="fas fa-gamepad"></i>
+                                    </div>
+                                    <h4>PixelForge</h4>
+                                </div>
+                                <div class="title-logo">
+                                    <div class="logo-square">
+                                        <i class="fas fa-palette"></i>
+                                    </div>
+                                    <h4>ArtCore</h4>
+                                </div>
+                                <div class="title-logo">
+                                    <div class="logo-hexagon">
+                                        <i class="fas fa-dragon"></i>
+                                    </div>
+                                    <h4>DragonUI</h4>
+                                </div>
+                                <div class="title-logo">
+                                    <div class="logo-diamond">
+                                        <i class="fas fa-crown"></i>
+                                    </div>
+                                    <h4>CrownPlay</h4>
+                                </div>
+                                <div class="title-logo">
+                                    <div class="logo-triangle">
+                                        <i class="fas fa-bolt"></i>
+                                    </div>
+                                    <h4>BoltDesign</h4>
+                                </div>
+                            </div>
+                            
+                            <h1 class="main-title">Jasa Desainer <span class="highlight">UI/UX</span> untuk Gim</h1>
+                            <p class="subtitle">Menciptakan Pengalaman Bermain yang Tak Terlupakan Melalui Desain yang Intuitif dan Menawan</p>
+                            
+                            <div class="title-stats">
+                                <div class="stat-item">
+                                    <div class="stat-number">50+</div>
+                                    <div class="stat-label">Proyek Selesai</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">8+</div>
+                                    <div class="stat-label">Tahun Pengalaman</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">100%</div>
+                                    <div class="stat-label">Kepuasan Klien</div>
+                                </div>
+                            </div>
+                            
+                            <div class="scroll-hint">
+                                <i class="fas fa-chevron-down"></i>
+                                <span>Scroll untuk melanjutkan</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Slide 2: Anggota Kelompok -->
+                <section class="slide" id="slide-2">
+                    <div class="slide-content">
+                        <div class="slide-header">
+                            <h2 class="slide-title">Tim <span class="highlight">Desainer</span> Profesional Kami</h2>
+                            <p class="slide-subtitle">Ahli UI/UX dengan spesialisasi dalam desain gim yang imersif</p>
+                        </div>
+                        
+                        <div class="team-grid">
+                            <!-- Member 1 -->
+                            <div class="team-member">
+                                <div class="member-photo-container">
+                                    <div class="member-photo">
+                                        <img src="Cuplikan layar 2026-01-13 095813.png" alt="Amar Syarif Ar Rayyan">
+                                    </div>
+                                    <div class="member-badge">
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="member-info">
+                                    <h3 class="member-name">Amar Syarif Ar Rayyan</h3>
+                                    <p class="member-role">Lead UI Designer & Art Director</p>
+                                    <p class="member-desc">Spesialis desain visual dan antarmuka untuk gim mobile dan RPG. 5+ tahun pengalaman.</p>
+                                    <div class="member-skills">
+                                        <span class="skill">Figma</span>
+                                        <span class="skill">Adobe XD</span>
+                                        <span class="skill">Illustrator</span>
+                                        <span class="skill">Photoshop</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Member 2 -->
+                            <div class="team-member">
+                                <div class="member-photo-container">
+                                    <div class="member-photo">
+                                        <img src="Cuplikan layar 2026-01-13 095833.png" alt="Rafa Dzaki Jummayil">
+                                    </div>
+                                    <div class="member-badge">
+                                        <i class="fas fa-bolt"></i>
+                                    </div>
+                                </div>
+                                <div class="member-info">
+                                    <h3 class="member-name">Rafa Dzaki Jummayil</h3>
+                                    <p class="member-role">UX Researcher & Interaction Designer</p>
+                                    <p class="member-desc">Ahli dalam analisis perilaku pemain dan desain interaksi yang intuitif. Background psikologi kognitif.</p>
+                                    <div class="member-skills">
+                                        <span class="skill">User Testing</span>
+                                        <span class="skill">Analytics</span>
+                                        <span class="skill">Prototyping</span>
+                                        <span class="skill">User Research</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Member 3 -->
+                            <div class="team-member">
+                                <div class="member-photo-container">
+                                    <div class="member-photo">
+                                        <img src="Cuplikan layar 2026-01-13 095918.png" alt="Syahwal Arya Saputra">
+                                    </div>
+                                    <div class="member-badge">
+                                        <i class="fas fa-palette"></i>
+                                    </div>
+                                </div>
+                                <div class="member-info">
+                                    <h3 class="member-name">Syahwal Arya Saputra</h3>
+                                    <p class="member-role">Visual Designer & Animator</p>
+                                    <p class="member-desc">Spesialis dalam desain karakter, environment, dan animasi UI untuk pengalaman yang dinamis.</p>
+                                    <div class="member-skills">
+                                        <span class="skill">After Effects</span>
+                                        <span class="skill">Blender</span>
+                                        <span class="skill">Photoshop</span>
+                                        <span class="skill">Animation</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Member 4 -->
+                            <div class="team-member">
+                                <div class="member-photo-container">
+                                    <div class="member-photo">
+                                        <img src="Cuplikan layar 2026-01-13 095933.png" alt="Taufik Ilham Pamungkas">
+                                    </div>
+                                    <div class="member-badge">
+                                        <i class="fas fa-code"></i>
+                                    </div>
+                                </div>
+                                <div class="member-info">
+                                    <h3 class="member-name">Taufik Ilham Pamungkas</h3>
+                                    <p class="member-role">UX Engineer & Technical Designer</p>
+                                    <p class="member-desc">Ahli implementasi desain dalam engine gim dan pengembangan prototipe interaktif.</p>
+                                    <div class="member-skills">
+                                        <span class="skill">Unity</span>
+                                        <span class="skill">Unreal Engine</span>
+                                        <span class="skill">JavaScript</span>
+                                        <span class="skill">Prototyping</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="team-stats">
+                            <div class="team-stat">
+                                <div class="team-stat-number">8</div>
+                                <div class="team-stat-label">Tahun Pengalaman Gabungan</div>
+                            </div>
+                            <div class="team-stat">
+                                <div class="team-stat-number">120+</div>
+                                <div class="team-stat-label">Proyek Gim Diselesaikan</div>
+                            </div>
+                            <div class="team-stat">
+                                <div class="team-stat-number">15</div>
+                                <div class="team-stat-label">Penghargaan Industri</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Slide 3: Apa itu UI/UX Gim? -->
+                <section class="slide" id="slide-3">
+                    <div class="slide-content">
+                        <div class="slide-header">
+                            <h2 class="slide-title">Apa itu <span class="highlight">UI/UX</span> untuk Gim?</h2>
+                            <p class="slide-subtitle">Memahami perbedaan dan hubungan antara User Interface dan User Experience</p>
+                        </div>
+                        
+                        <div class="definition-container">
+                            <div class="definition-card ui-card">
+                                <div class="definition-header">
+                                    <div class="definition-icon">
+                                        <i class="fas fa-eye"></i>
+                                    </div>
+                                    <h3>User Interface (UI)</h3>
+                                </div>
+                                <div class="definition-content">
+                                    <p>Segala elemen visual yang pemain lihat dan interaksi di dalam gim:</p>
+                                    <ul>
+                                        <li>Menu, tombol, dan ikon</li>
+                                        <li>HUD (Head-Up Display)</li>
+                                        <li>Tipografi dan skema warna</li>
+                                        <li>Layout dan navigasi</li>
+                                        <li>Animasi dan transisi</li>
+                                    </ul>
+                                    <div class="definition-example">
+                                        <div class="example-hud">
+                                            <div class="hud-element health">
+                                                <div class="hud-label">HEALTH</div>
+                                                <div class="hud-bar">
+                                                    <div class="hud-fill health-fill"></div>
+                                                </div>
+                                            </div>
+                                            <div class="hud-element ammo">
+                                                <div class="hud-label">AMMO</div>
+                                                <div class="hud-value">24/120</div>
+                                            </div>
+                                        </div>
+                                        <p class="example-caption">Contoh HUD dengan prinsip desain UI yang baik</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="definition-card ux-card">
+                                <div class="definition-header">
+                                    <div class="definition-icon">
+                                        <i class="fas fa-user-check"></i>
+                                    </div>
+                                    <h3>User Experience (UX)</h3>
+                                </div>
+                                <div class="definition-content">
+                                    <p>Pengalaman keseluruhan dan emosi yang dirasakan pemain saat bermain:</p>
+                                    <ul>
+                                        <li>Kemudahan belajar kontrol</li>
+                                        <li>Alur permainan yang logis</li>
+                                        <li>Feedback yang jelas untuk setiap aksi</li>
+                                        <li>Keseimbangan kesulitan</li>
+                                        <li>Kepuasan dan keterlibatan emosional</li>
+                                    </ul>
+                                    <div class="definition-example">
+                                        <div class="ux-flow">
+                                            <div class="flow-step">
+                                                <div class="flow-number">1</div>
+                                                <div class="flow-text">Pemain Memulai</div>
+                                            </div>
+                                            <div class="flow-arrow"><i class="fas fa-arrow-right"></i></div>
+                                            <div class="flow-step">
+                                                <div class="flow-number">2</div>
+                                                <div class="flow-text">Belajar Intuitif</div>
+                                            </div>
+                                            <div class="flow-arrow"><i class="fas fa-arrow-right"></i></div>
+                                            <div class="flow-step">
+                                                <div class="flow-number">3</div>
+                                                <div class="flow-text">Tantangan Sesuai</div>
+                                            </div>
+                                            <div class="flow-arrow"><i class="fas fa-arrow-right"></i></div>
+                                            <div class="flow-step">
+                                                <div class="flow-number">4</div>
+                                                <div class="flow-text">Kepuasan & Flow</div>
+                                            </div>
+                                        </div>
+                                        <p class="example-caption">Alur pengalaman pemain yang optimal</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="comparison-section">
+                            <div class="comparison-item">
+                                <h4><i class="fas fa-paint-brush"></i> UI = TAMPILAN</h4>
+                                <p>Bagaimana gim terlihat</p>
+                            </div>
+                            <div class="comparison-item">
+                                <h4><i class="fas fa-heart"></i> UX = PENGALAMAN</h4>
+                                <p>Bagaimana gim terasa</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Slide 4: Layanan Kami -->
+                <section class="slide" id="slide-4">
+                    <div class="slide-content">
+                        <div class="slide-header">
+                            <h2 class="slide-title">Layanan <span class="highlight">Desain</span> Kami</h2>
+                            <p class="slide-subtitle">Solusi lengkap untuk semua kebutuhan UI/UX gim Anda</p>
+                        </div>
+                        
+                        <div class="services-grid">
+                            <div class="service-card">
+                                <div class="service-icon">
+                                    <i class="fas fa-paint-brush"></i>
+                                </div>
+                                <h3 class="service-title">UI Design Lengkap</h3>
+                                <p class="service-desc">Desain antarmuka yang menarik dan fungsional untuk semua layar gim.</p>
+                                <ul class="service-features">
+                                    <li>Wireframing & Mockup</li>
+                                    <li>Desain Visual & Ikon</li>
+                                    <li>Style Guide & Asset</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="service-card">
+                                <div class="service-icon">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                                <h3 class="service-title">UX Research & Testing</h3>
+                                <p class="service-desc">Analisis mendalam perilaku pemain untuk pengalaman optimal.</p>
+                                <ul class="service-features">
+                                    <li>User Testing & Interview</li>
+                                    <li>Analytics & Heatmaps</li>
+                                    <li>Persona Development</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="service-card">
+                                <div class="service-icon">
+                                    <i class="fas fa-mobile-alt"></i>
+                                </div>
+                                <h3 class="service-title">Mobile Game UI/UX</h3>
+                                <p class="service-desc">Desain khusus untuk gim mobile dengan kontrol touchscreen.</p>
+                                <ul class="service-features">
+                                    <li>Touch Interface Design</li>
+                                    <li>Responsive Layout</li>
+                                    <li>Mobile-Specific Patterns</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="service-card">
+                                <div class="service-icon">
+                                    <i class="fas fa-tv"></i>
+                                </div>
+                                <h3 class="service-title">PC/Console UI/UX</h3>
+                                <p class="service-desc">Desain untuk platform PC dan konsol dengan kontrol gamepad.</p>
+                                <ul class="service-features">
+                                    <li>Gamepad Interface Design</li>
+                                    <li>HUD & Menu Optimization</li>
+                                    <li>Cross-Platform Design</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="service-process">
+                            <h3 class="process-title">Proyek Khas Kami:</h3>
+                            <div class="process-steps">
+                                <div class="process-step">
+                                    <div class="step-number">1</div>
+                                    <div class="step-content">
+                                        <h4>Konsultasi & Briefing</h4>
+                                        <p>Diskusi kebutuhan dan tujuan proyek</p>
+                                    </div>
+                                </div>
+                                <div class="process-step">
+                                    <div class="step-number">2</div>
+                                    <div class="step-content">
+                                        <h4>Research & Planning</h4>
+                                        <p>Analisis audiens dan perencanaan desain</p>
+                                    </div>
+                                </div>
+                                <div class="process-step">
+                                    <div class="step-number">3</div>
+                                    <div class="step-content">
+                                        <h4>Design & Prototyping</h4>
+                                        <p>Pembuatan desain dan prototipe interaktif</p>
+                                    </div>
+                                </div>
+                                <div class="process-step">
+                                    <div class="step-number">4</div>
+                                    <div class="step-content">
+                                        <h4>Testing & Revisi</h4>
+                                        <p>Pengujian dengan user dan penyempurnaan</p>
+                                    </div>
+                                </div>
+                                <div class="process-step">
+                                    <div class="step-number">5</div>
+                                    <div class="step-content">
+                                        <h4>Delivery & Support</h4>
+                                        <p>Serah terima dan dukungan pasca-proyek</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Slide 5: Proses Desain -->
+                <section class="slide" id="slide-5">
+                    <div class="slide-content">
+                        <div class="slide-header">
+                            <h2 class="slide-title">Proses <span class="highlight">Desain</span> Kami</h2>
+                            <p class="slide-subtitle">Metodologi terstruktur untuk hasil maksimal</p>
+                        </div>
+                        
+                        <div class="design-process">
+                            <div class="process-visual">
+                                <div class="process-circle">
+                                    <div class="process-item research">
+                                        <div class="process-icon">
+                                            <i class="fas fa-search"></i>
+                                        </div>
+                                        <h4>Research</h4>
+                                    </div>
+                                    <div class="process-item wireframe">
+                                        <div class="process-icon">
+                                            <i class="fas fa-pencil-ruler"></i>
+                                        </div>
+                                        <h4>Wireframe</h4>
+                                    </div>
+                                    <div class="process-item design">
+                                        <div class="process-icon">
+                                            <i class="fas fa-palette"></i>
+                                        </div>
+                                        <h4>Design</h4>
+                                    </div>
+                                    <div class="process-item prototype">
+                                        <div class="process-icon">
+                                            <i class="fas fa-cube"></i>
+                                        </div>
+                                        <h4>Prototype</h4>
+                                    </div>
+                                    <div class="process-item test">
+                                        <div class="process-icon">
+                                            <i class="fas fa-vial"></i>
+                                        </div>
+                                        <h4>Test</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="process-details">
+                                <div class="process-detail active" id="detail-research">
+                                    <h3>1. Research & Discovery</h3>
+                                    <p>Kami memulai dengan memahami audiens target, menganalisis kompetitor, dan mengeksplorasi tren desain terkini. Proses ini mencakup:</p>
+                                    <ul>
+                                        <li>Analisis audiens dan persona pemain</li>
+                                        <li>Studi kompetitor dan benchmark</li>
+                                        <li>Research tren desain UI/UX gim</li>
+                                        <li>Definisi tujuan dan metrik keberhasilan</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="process-detail" id="detail-wireframe">
+                                    <h3>2. Wireframing & Structure</h3>
+                                    <p>Membuat kerangka dasar antarmuka gim dengan fokus pada alur pengguna dan arsitektur informasi:</p>
+                                    <ul>
+                                        <li>Pembuatan user flow dan journey maps</li>
+                                        <li>Wireframing low-fidelity</li>
+                                        <li>Struktur menu dan navigasi</li>
+                                        <li>Layout dasar semua layar</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="process-detail" id="detail-design">
+                                    <h3>3. Visual Design & Styling</h3>
+                                    <p>Mengaplikasikan elemen visual yang menarik dan konsisten dengan tema gim:</p>
+                                    <ul>
+                                        <li>Pemilihan warna dan tipografi</li>
+                                        <li>Desain ikon dan elemen UI</li>
+                                        <li>Pembuatan aset visual</li>
+                                        <li>Style guide dan design system</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="process-detail" id="detail-prototype">
+                                    <h3>4. Prototyping & Interaction</h3>
+                                    <p>Mengembangkan prototipe interaktif untuk menguji alur dan interaksi:</p>
+                                    <ul>
+                                        <li>Prototipe klik (click-through)</li>
+                                        <li>Animasi dan transisi UI</li>
+                                        <li>Micro-interactions</li>
+                                        <li>Prototipe untuk user testing</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="process-detail" id="detail-test">
+                                    <h3>5. Testing & Iteration</h3>
+                                    <p>Menguji desain dengan pengguna nyata dan menyempurnakan berdasarkan feedback:</p>
+                                    <ul>
+                                        <li>Usability testing dengan target audience</li>
+                                        <li>A/B testing untuk opsi desain</li>
+                                        <li>Analisis feedback dan metrik</li>
+                                        <li>Iterasi dan penyempurnaan desain</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Slide 6: Portfolio -->
+                <section class="slide" id="slide-6">
+                    <div class="slide-content">
+                        <div class="slide-header">
+                            <h2 class="slide-title">Portfolio <span class="highlight">Kami</span></h2>
+                            <p class="slide-subtitle">Beberapa proyek gim yang telah kami desain UI/UX-nya</p>
+                        </div>
+                        
+                        <div class="portfolio-grid">
+                            <div class="portfolio-item">
+                                <div class="portfolio-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                                    <div class="portfolio-overlay">
+                                        <span class="portfolio-category">RPG Mobile</span>
+                                    </div>
+                                </div>
+                                <div class="portfolio-content">
+                                    <h3 class="portfolio-title">Dragon's Legacy</h3>
+                                    <p class="portfolio-desc">Desain UI/UX untuk gim RPG mobile dengan 1M+ downloads dan rating 4.8 di Play Store.</p>
+                                    <div class="portfolio-stats">
+                                        <div class="portfolio-stat">
+                                            <div class="stat-value">+300%</div>
+                                            <div class="stat-label">Retention Rate</div>
+                                        </div>
+                                        <div class="portfolio-stat">
+                                            <div class="stat-value">4.8</div>
+                                            <div class="stat-label">User Rating</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="portfolio-item">
+                                <div class="portfolio-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                                    <div class="portfolio-overlay">
+                                        <span class="portfolio-category">Puzzle Game</span>
+                                    </div>
+                                </div>
+                                <div class="portfolio-content">
+                                    <h3 class="portfolio-title">Mind Maze Adventure</h3>
+                                    <p class="portfolio-desc">Desain antarmuka untuk gim puzzle dengan mekanik unik dan onboarding yang intuitif.</p>
+                                    <div class="portfolio-stats">
+                                        <div class="portfolio-stat">
+                                            <div class="stat-value">-40%</div>
+                                            <div class="stat-label">Bounce Rate</div>
+                                        </div>
+                                        <div class="portfolio-stat">
+                                            <div class="stat-value">92%</div>
+                                            <div class="stat-label">Completion Rate</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="portfolio-item">
+                                <div class="portfolio-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                                    <div class="portfolio-overlay">
+                                        <span class="portfolio-category">Adventure Game</span>
+                                    </div>
+                                </div>
+                                <div class="portfolio-content">
+                                    <h3 class="portfolio-title">Ocean Explorer</h3>
+                                    <p class="portfolio-desc">Desain visual dan UX untuk gim adventure bawah laut dengan sistem inventory yang kompleks.</p>
+                                    <div class="portfolio-stats">
+                                        <div class="portfolio-stat">
+                                            <div class="stat-value">+25%</div>
+                                            <div class="stat-label">Play Time</div>
+                                        </div>
+                                        <div class="portfolio-stat">
+                                            <div class="stat-value">4.6</div>
+                                            <div class="stat-label">User Rating</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="portfolio-stats-overall">
+                            <div class="overall-stat">
+                                <div class="overall-number">150+</div>
+                                <div class="overall-label">Proyek Diselesaikan</div>
+                            </div>
+                            <div class="overall-stat">
+                                <div class="overall-number">98%</div>
+                                <div class="overall-label">Klien Puas</div>
+                            </div>
+                            <div class="overall-stat">
+                                <div class="overall-number">25</div>
+                                <div class="overall-label">Penghargaan</div>
+                            </div>
+                            <div class="overall-stat">
+                                <div class="overall-number">10M+</div>
+                                <div class="overall-label">Total Downloads</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Slide 7: Teknologi -->
+                <section class="slide" id="slide-7">
+                    <div class="slide-content">
+                        <div class="slide-header">
+                            <h2 class="slide-title">Teknologi & <span class="highlight">Tools</span></h2>
+                            <p class="slide-subtitle">Software dan teknologi terbaru yang kami gunakan untuk desain optimal</p>
+                        </div>
+                        
+                        <div class="tech-grid">
+                            <div class="tech-category">
+                                <h3 class="category-title"><i class="fas fa-pen-fancy"></i> Design & Prototyping</h3>
+                                <div class="tech-items">
+                                    <div class="tech-item">
+                                        <div class="tech-icon">
+                                            <i class="fab fa-figma"></i>
+                                        </div>
+                                        <div class="tech-info">
+                                            <h4>Figma</h4>
+                                            <p>Design, prototyping, collaboration</p>
+                                            <div class="tech-rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="tech-item">
+                                        <div class="tech-icon">
+                                            <i class="fas fa-palette"></i>
+                                        </div>
+                                        <div class="tech-info">
+                                            <h4>Adobe Creative Suite</h4>
+                                            <p>Photoshop, Illustrator, After Effects</p>
+                                            <div class="tech-rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="tech-item">
+                                        <div class="tech-icon">
+                                            <i class="fas fa-vector-square"></i>
+                                        </div>
+                                        <div class="tech-info">
+                                            <h4>Sketch</h4>
+                                            <p>UI design, symbols, prototyping</p>
+                                            <div class="tech-rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="tech-category">
+                                <h3 class="category-title"><i class="fas fa-gamepad"></i> Game Development</h3>
+                                <div class="tech-items">
+                                    <div class="tech-item">
+                                        <div class="tech-icon">
+                                            <i class="fab fa-unity"></i>
+                                        </div>
+                                        <div class="tech-info">
+                                            <h4>Unity Engine</h4>
+                                            <p>UI implementation, prototyping</p>
+                                            <div class="tech-rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="tech-item">
+                                        <div class="tech-icon">
+                                            <i class="fas fa-cube"></i>
+                                        </div>
+                                        <div class="tech-info">
+                                            <h4>Unreal Engine</h4>
+                                            <p>Visual scripting, UMG</p>
+                                            <div class="tech-rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="tech-item">
+                                        <div class="tech-icon">
+                                            <i class="fas fa-cube"></i>
+                                        </div>
+                                        <div class="tech-info">
+                                            <h4>Blender</h4>
+                                            <p>3D modeling, animation</p>
+                                            <div class="tech-rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-notes">
+                            <div class="note-card">
+                                <div class="note-icon">
+                                    <i class="fas fa-lightbulb"></i>
+                                </div>
+                                <div class="note-content">
+                                    <h4>Why Figma is Our Primary Tool</h4>
+                                    <p>Figma dipilih sebagai tool utama karena kemampuan kolaborasi real-time, prototyping yang powerful, dan integrasi yang baik dengan development workflow. Tool ini memungkinkan seluruh tim bekerja bersama secara efisien.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Slide 8: Testimoni -->
+                <section class="slide" id="slide-8">
+                    <div class="slide-content">
+                        <div class="slide-header">
+                            <h2 class="slide-title">Testimoni <span class="highlight">Klien</span></h2>
+                            <p class="slide-subtitle">Apa kata klien tentang hasil desain UI/UX kami</p>
+                        </div>
+                        
+                        <div class="testimonials-container">
+                            <div class="testimonial-slider">
+                                <div class="testimonial-slide active">
+                                    <div class="testimonial-content">
+                                        <div class="quote-icon">
+                                            <i class="fas fa-quote-left"></i>
+                                        </div>
+                                        <p class="testimonial-text">"Desain UI dari tim GameUX membuat gim RPG mobile kami mendapatkan rating 4.8 di App Store. Retention rate pemain meningkat 45% setelah implementasi desain baru mereka. Proses kerja sangat profesional dan komunikatif."</p>
+                                        <div class="testimonial-author">
+                                            <div class="author-avatar">
+                                                <i class="fas fa-user-tie"></i>
+                                            </div>
+                                            <div class="author-info">
+                                                <h4 class="author-name">Budi Santoso</h4>
+                                                <p class="author-role">CEO, DragonForge Games</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="testimonial-slide">
+                                    <div class="testimonial-content">
+                                        <div class="quote-icon">
+                                            <i class="fas fa-quote-left"></i>
+                                        </div>
+                                        <p class="testimonial-text">"UX research yang dilakukan sangat detail dan insightful. Hasilnya, completion rate tutorial gim puzzle kami naik dari 60% ke 92%. Tim sangat memahami psikologi pemain dan mampu menerjemahkannya ke dalam desain yang efektif."</p>
+                                        <div class="testimonial-author">
+                                            <div class="author-avatar">
+                                                <i class="fas fa-user-graduate"></i>
+                                            </div>
+                                            <div class="author-info">
+                                                <h4 class="author-name">Sarah Wijaya</h4>
+                                                <p class="author-role">Product Manager, PuzzleCraft Studio</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="testimonial-slide">
+                                    <div class="testimonial-content">
+                                        <div class="quote-icon">
+                                            <i class="fas fa-quote-left"></i>
+                                        </div>
+                                        <p class="testimonial-text">"Sebagai indie developer dengan budget terbatas, kami khawatir dengan biaya desain profesional. Namun tim GameUX memberikan solusi yang affordable dengan kualitas premium. Desain mereka membantu gim kami mendapatkan featured di Play Store."</p>
+                                        <div class="testimonial-author">
+                                            <div class="author-avatar">
+                                                <i class="fas fa-user-ninja"></i>
+                                            </div>
+                                            <div class="author-info">
+                                                <h4 class="author-name">Rizky Pratama</h4>
+                                                <p class="author-role">Founder, IndiePlay Studio</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="testimonial-controls">
+                                <button class="testimonial-prev">
+                                    <i class="fas fa-chevron-left"></i>
+                                </button>
+                                <div class="testimonial-dots">
+                                    <span class="testimonial-dot active"></span>
+                                    <span class="testimonial-dot"></span>
+                                    <span class="testimonial-dot"></span>
+                                </div>
+                                <button class="testimonial-next">
+                                    <i class="fas fa-chevron-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonial-stats">
+                            <div class="testimonial-stat">
+                                <div class="testimonial-stat-value">4.9/5.0</div>
+                                <div class="testimonial-stat-label">Rating Rata-rata</div>
+                            </div>
+                            <div class="testimonial-stat">
+                                <div class="testimonial-stat-value">95%</div>
+                                <div class="testimonial-stat-label">Klien Kembali</div>
+                            </div>
+                            <div class="testimonial-stat">
+                                <div class="testimonial-stat-value">50+</div>
+                                <div class="testimonial-stat-label">Testimoni Positif</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Slide 9: Keunggulan -->
+                <section class="slide" id="slide-9">
+                    <div class="slide-content">
+                        <div class="slide-header">
+                            <h2 class="slide-title">Keunggulan <span class="highlight">Kami</span></h2>
+                            <p class="slide-subtitle">Mengapa memilih jasa desain UI/UX gim dari tim kami</p>
+                        </div>
+                        
+                        <div class="advantages-grid">
+                            <div class="advantage-card">
+                                <div class="advantage-icon">
+                                    <i class="fas fa-rocket"></i>
+                                </div>
+                                <h3 class="advantage-title">Proses Cepat</h3>
+                                <p class="advantage-desc">Waktu pengerjaan 30% lebih cepat dari rata-rata industri dengan standar kualitas tertinggi.</p>
+                                <div class="advantage-metric">
+                                    <span class="metric-value">2-4 Minggu</span>
+                                    <span class="metric-label">Rata-rata pengerjaan</span>
+                                </div>
+                            </div>
+                            
+                            <div class="advantage-card">
+                                <div class="advantage-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <h3 class="advantage-title">Tim Lengkap</h3>
+                                <p class="advantage-desc">Tim multidisplin dengan spesialisasi UI, UX, research, dan implementation dalam satu tempat.</p>
+                                <div class="advantage-metric">
+                                    <span class="metric-value">4 Spesialis</span>
+                                    <span class="metric-label">Dalam satu tim</span>
+                                </div>
+                            </div>
+                            
+                            <div class="advantage-card">
+                                <div class="advantage-icon">
+                                    <i class="fas fa-medal"></i>
+                                </div>
+                                <h3 class="advantage-title">Kualitas Premium</h3>
+                                <p class="advantage-desc">Desain dengan standar industri AAA game dan best practices terbaru dalam UX design.</p>
+                                <div class="advantage-metric">
+                                    <span class="metric-value">AAA Standard</span>
+                                    <span class="metric-label">Kualitas desain</span>
+                                </div>
+                            </div>
+                            
+                            <div class="advantage-card">
+                                <div class="advantage-icon">
+                                    <i class="fas fa-comments"></i>
+                                </div>
+                                <h3 class="advantage-title">Komunikasi Intensif</h3>
+                                <p class="advantage-desc">Update berkala, feedback loop cepat, dan komunikasi transparan sepanjang proyek.</p>
+                                <div class="advantage-metric">
+                                    <span class="metric-value">24/7</span>
+                                    <span class="metric-label">Komunikasi tersedia</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="comparison-section">
+                            <div class="comparison-table">
+                                <div class="comparison-header">
+                                    <div class="comparison-col">Fitur</div>
+                                    <div class="comparison-col">Studio Lain</div>
+                                    <div class="comparison-col highlight-col">GameUX Studio</div>
+                                </div>
+                                <div class="comparison-row">
+                                    <div class="comparison-col">Tim Lengkap UI/UX</div>
+                                    <div class="comparison-col"><i class="fas fa-times-circle no-icon"></i></div>
+                                    <div class="comparison-col"><i class="fas fa-check-circle yes-icon"></i></div>
+                                </div>
+                                <div class="comparison-row">
+                                    <div class="comparison-col">Game Industry Experience</div>
+                                    <div class="comparison-col"><i class="fas fa-times-circle no-icon"></i></div>
+                                    <div class="comparison-col"><i class="fas fa-check-circle yes-icon"></i></div>
+                                </div>
+                                <div class="comparison-row">
+                                    <div class="comparison-col">Post-Project Support</div>
+                                    <div class="comparison-col">30 hari</div>
+                                    <div class="comparison-col">90 hari</div>
+                                </div>
+                                <div class="comparison-row">
+                                    <div class="comparison-col">File Source Lengkap</div>
+                                    <div class="comparison-col"><i class="fas fa-times-circle no-icon"></i></div>
+                                    <div class="comparison-col"><i class="fas fa-check-circle yes-icon"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Slide 10: Paket Layanan -->
+                <section class="slide" id="slide-10">
+                    <div class="slide-content">
+                        <div class="slide-header">
+                            <h2 class="slide-title">Paket <span class="highlight">Layanan</span></h2>
+                            <p class="slide-subtitle">Pilih paket yang sesuai dengan kebutuhan dan budget proyek gim Anda</p>
+                        </div>
+                        
+                        <div class="pricing-grid">
+                            <div class="pricing-card">
+                                <div class="pricing-header">
+                                    <h3 class="pricing-title">Starter</h3>
+                                    <div class="pricing-price">
+                                        <span class="price-currency">Rp</span>
+                                        <span class="price-value">15</span>
+                                        <span class="price-unit">jt</span>
+                                    </div>
+                                    <p class="pricing-period">Per proyek</p>
+                                </div>
+                                <div class="pricing-features">
+                                    <ul>
+                                        <li><i class="fas fa-check-circle"></i> UI Design untuk 5 layar utama</li>
+                                        <li><i class="fas fa-check-circle"></i> Basic wireframing</li>
+                                        <li><i class="fas fa-check-circle"></i> Style guide dasar</li>
+                                        <li><i class="fas fa-check-circle"></i> 3 sesi revisi</li>
+                                        <li><i class="fas fa-check-circle"></i> 2 minggu pengerjaan</li>
+                                        <li><i class="fas fa-times-circle"></i> UX research tidak termasuk</li>
+                                        <li><i class="fas fa-times-circle"></i> Prototyping terbatas</li>
+                                    </ul>
+                                </div>
+                                <button class="pricing-button">Pilih Paket</button>
+                            </div>
+                            
+                            <div class="pricing-card popular">
+                                <div class="popular-badge">POPULAR</div>
+                                <div class="pricing-header">
+                                    <h3 class="pricing-title">Professional</h3>
+                                    <div class="pricing-price">
+                                        <span class="price-currency">Rp</span>
+                                        <span class="price-value">30</span>
+                                        <span class="price-unit">jt</span>
+                                    </div>
+                                    <p class="pricing-period">Per proyek</p>
+                                </div>
+                                <div class="pricing-features">
+                                    <ul>
+                                        <li><i class="fas fa-check-circle"></i> UI/UX Design lengkap</li>
+                                        <li><i class="fas fa-check-circle"></i> Basic user research</li>
+                                        <li><i class="fas fa-check-circle"></i> Interactive prototyping</li>
+                                        <li><i class="fas fa-check-circle"></i> Design system</li>
+                                        <li><i class="fas fa-check-circle"></i> 5 sesi revisi</li>
+                                        <li><i class="fas fa-check-circle"></i> 4 minggu pengerjaan</li>
+                                        <li><i class="fas fa-check-circle"></i> Usability testing basic</li>
+                                    </ul>
+                                </div>
+                                <button class="pricing-button">Pilih Paket</button>
+                            </div>
+                            
+                            <div class="pricing-card">
+                                <div class="pricing-header">
+                                    <h3 class="pricing-title">Enterprise</h3>
+                                    <div class="pricing-price">
+                                        <span class="price-currency">Rp</span>
+                                        <span class="price-value">50</span>
+                                        <span class="price-unit">jt+</span>
+                                    </div>
+                                    <p class="pricing-period">Custom project</p>
+                                </div>
+                                <div class="pricing-features">
+                                    <ul>
+                                        <li><i class="fas fa-check-circle"></i> Semua fitur Professional</li>
+                                        <li><i class="fas fa-check-circle"></i> Dedicated project team</li>
+                                        <li><i class="fas fa-check-circle"></i> Extensive UX research</li>
+                                        <li><i class="fas fa-check-circle"></i> Advanced prototyping</li>
+                                        <li><i class="fas fa-check-circle"></i> Unlimited revisi</li>
+                                        <li><i class="fas fa-check-circle"></i> Custom timeline</li>
+                                        <li><i class="fas fa-check-circle"></i> Priority support 24/7</li>
+                                    </ul>
+                                </div>
+                                <button class="pricing-button">Konsultasi Gratis</button>
+                            </div>
+                        </div>
+                        
+                        <div class="pricing-notes">
+                            <div class="note">
+                                <i class="fas fa-info-circle"></i>
+                                <p>Semua paket termasuk file source lengkap (Figma/Adobe XD), style guide, dan aset ekspor. Harga dapat berubah sesuai kompleksitas proyek.</p>
+                            </div>
+                            <div class="note">
+                                <i class="fas fa-calendar-check"></i>
+                                <p>Konsultasi gratis 30 menit tersedia untuk semua calon klien sebelum memilih paket.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Slide 11: Pencapaian -->
+                <section class="slide" id="slide-11">
+                    <div class="slide-content">
+                        <div class="slide-header">
+                            <h2 class="slide-title">Pencapaian & <span class="highlight">Statistik</span></h2>
+                            <p class="slide-subtitle">Angka-angka yang membuktikan kualitas dan pengalaman kami</p>
+                        </div>
+                        
+                        <div class="stats-grid">
+                            <div class="stat-card">
+                                <div class="stat-icon">
+                                    <i class="fas fa-project-diagram"></i>
+                                </div>
+                                <div class="stat-content">
+                                    <div class="stat-number" data-target="150">0</div>
+                                    <div class="stat-label">Proyek Diselesaikan</div>
+                                </div>
+                            </div>
+                            
+                            <div class="stat-card">
+                                <div class="stat-icon">
+                                    <i class="fas fa-user-check"></i>
+                                </div>
+                                <div class="stat-content">
+                                    <div class="stat-number" data-target="98">0</div>
+                                    <div class="stat-label">% Klien Puas</div>
+                                </div>
+                            </div>
+                            
+                            <div class="stat-card">
+                                <div class="stat-icon">
+                                    <i class="fas fa-trophy"></i>
+                                </div>
+                                <div class="stat-content">
+                                    <div class="stat-number" data-target="25">0</div>
+                                    <div class="stat-label">Penghargaan Industri</div>
+                                </div>
+                            </div>
+                            
+                            <div class="stat-card">
+                                <div class="stat-icon">
+                                    <i class="fas fa-download"></i>
+                                </div>
+                                <div class="stat-content">
+                                    <div class="stat-number" data-target="10">0</div>
+                                    <div class="stat-label">Juta+ Downloads</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="chart-container">
+                            <h3 class="chart-title">Distribusi Proyek Berdasarkan Genre</h3>
+                            <div class="chart-bars">
+                                <div class="chart-bar">
+                                    <div class="bar-label">Mobile Games</div>
+                                    <div class="bar-container">
+                                        <div class="bar-fill" style="width: 65%; background-color: #667eea;"></div>
+                                        <span class="bar-value">65%</span>
+                                    </div>
+                                </div>
+                                <div class="chart-bar">
+                                    <div class="bar-label">PC Games</div>
+                                    <div class="bar-container">
+                                        <div class="bar-fill" style="width: 25%; background-color: #f093fb;"></div>
+                                        <span class="bar-value">25%</span>
+                                    </div>
+                                </div>
+                                <div class="chart-bar">
+                                    <div class="bar-label">Console Games</div>
+                                    <div class="bar-container">
+                                        <div class="bar-fill" style="width: 10%; background-color: #4facfe;"></div>
+                                        <span class="bar-value">10%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="awards-section">
+                            <h3 class="awards-title">Penghargaan Terbaru</h3>
+                            <div class="awards-list">
+                                <div class="award-item">
+                                    <div class="award-icon">
+                                        <i class="fas fa-award"></i>
+                                    </div>
+                                    <div class="award-content">
+                                        <h4>Best Mobile Game UI 2023</h4>
+                                        <p>Game Design Awards 2023</p>
+                                    </div>
+                                </div>
+                                <div class="award-item">
+                                    <div class="award-icon">
+                                        <i class="fas fa-medal"></i>
+                                    </div>
+                                    <div class="award-content">
+                                        <h4>Excellence in UX Design</h4>
+                                        <p>Indonesia Game Festival 2022</p>
+                                    </div>
+                                </div>
+                                <div class="award-item">
+                                    <div class="award-icon">
+                                        <i class="fas fa-trophy"></i>
+                                    </div>
+                                    <div class="award-content">
+                                        <h4>Top Game Design Studio</h4>
+                                        <p>SEA Game Awards 2021</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Slide 12: Kontak Kami -->
+                <section class="slide" id="slide-12">
+                    <div class="slide-content">
+                        <div class="slide-header">
+                            <h2 class="slide-title">Hubungi <span class="highlight">Kami</span></h2>
+                            <p class="slide-subtitle">Mari diskusikan proyek gim Anda dan ciptakan pengalaman bermain yang luar biasa</p>
+                        </div>
+                        
+                        <div class="contact-container">
+                            <div class="contact-info">
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div class="contact-details">
+                                        <h4>Email</h4>
+                                        <p>rafaganteng@gmail.com</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-phone"></i>
+                                    </div>
+                                    <div class="contact-details">
+                                        <h4>Telepon & WhatsApp</h4>
+                                        <p>+62 813 9876 5432 (Rafa)</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="contact-details">
+                                        <h4>Kantor</h4>
+                                        <p>Jl. Gim Design No. 123</p>
+                                        <p>Jakarta Selatan, Indonesia</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-clock"></i>
+                                    </div>
+                                    <div class="contact-details">
+                                        <h4>Jam Operasional</h4>
+                                        <p>Senin - Jumat: 09:00 - 18:00</p>
+                                        <p>Sabtu: 10:00 - 15:00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-form">
+                                <h3 class="form-title">Kirim Pesan</h3>
+                                <form id="contactForm">
+                                    <div class="form-group">
+                                        <input type="text" placeholder="Nama Anda" class="form-input" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" placeholder="Email Anda" class="form-input" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" placeholder="Nama Perusahaan/Studio" class="form-input">
+                                    </div>
+                                    <div class="form-group">
+                                        <select class="form-input" required>
+                                            <option value="" disabled selected>Jenis Proyek</option>
+                                            <option value="mobile">Mobile Game</option>
+                                            <option value="pc">PC Game</option>
+                                            <option value="console">Console Game</option>
+                                            <option value="other">Lainnya</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea placeholder="Deskripsikan proyek gim Anda" class="form-input" rows="4" required></textarea>
+                                    </div>
+                                    <button type="submit" class="submit-button">
+                                        <i class="fas fa-paper-plane"></i> Kirim Pesan
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        
+                        <div class="footer">
+                            <div class="footer-logo">
+                                <div class="footer-logo-icon">
+                                    <i class="fas fa-gamepad"></i>
+                                </div>
+                                <div class="footer-logo-text">
+                                    <h3>GameUX Design Studio</h3>
+                                    <p>Desain UI/UX untuk Gim Terbaik</p>
+                                </div>
+                            </div>
+                            
+                            <div class="footer-social">
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-behance"></i>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-dribbble"></i>
+                                </a>
+                            </div>
+                            
+                            <div class="footer-copyright">
+                                <p>&copy; 2023 GameUX Design Studio. Presentasi oleh Amar, Rafa, Syahwal, Taufik.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
